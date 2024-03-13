@@ -1,0 +1,413 @@
+/* General styles */
+body {
+  margin: 10px;
+  padding: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+p {
+  margin: 20px 20px 20px 20px;
+  }
+
+
+
+  /*home page*/
+  /* navigation bar*/
+ { margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: lightgreen;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 0px;
+    margin-left: opx;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; 
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #333; 
+}
+
+/* Responsive Style to the navbar */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/*logo in the bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgreen;
+    padding: 10px 20px; 
+  }
+  
+  .logo img {
+    height: 40px;
+    
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 10px; }
+  
+  .nav-links li:last-child {
+    margin-right: 0; 
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black; 
+  }
+
+
+.image-container {
+    max-width: 100%; 
+    height: 40%;
+    margin: 0 auto; 
+}
+
+.image-container img {
+    width: 100%; 
+    height:40%; 
+    display: block; 
+}
+
+/*welcoming paragraph*/
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.paragraph-section {
+    width: 90%; 
+    text-align: left; 
+}
+
+.paragraph-section p {
+    margin-bottom: 20px; 
+}
+
+/* kindergarten options cards*/
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    max-width: 1200px; 
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    width: calc(30% - 40px); 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px 20px 20px 20px; 
+}
+
+.card h2 {
+    margin-top: 10px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px); 
+    }
+}
+
+/* footer bar*/
+.footer-navbar {
+    background-color: lightgreen;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-navbar p {
+    margin: 0;
+}
+
+/* About page*/
+
+/*skip link*/
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.skip-link:focus,
+.skip-link:hover {
+  top: 0;
+}
+
+
+/* who we are section*/
+.whoweare-section {
+    position: relative;
+    padding: 50px;
+    color: black;
+}
+
+.skybackground-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/sky.png'); 
+    background-size: cover;
+    background-position: center;
+    padding: 50px; 
+}
+
+.content-container {
+        padding: 20px; 
+}
+
+/*--Teachers gallery with fade in loading animation--*/
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.responsive {
+  padding: 0 6px;
+  width: 24.99999%;
+}
+
+.gallery {
+  border: 1px solid #ccc;
+  animation: fadeIn 2s ease forwards;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  /* Kidzonea building gallery*/
+
+  .gallery-horizontal {
+    display: flex;
+    overflow-y: auto;
+    flex-direction: row; 
+  }
+  
+  .gallery-item {
+    flex: 1;
+    max-width: 33.33%; 
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    padding: 10px;
+  }
+  @media only screen and (max-width: 100%) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+
+
+
+/* contact us*/
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: lightgreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  /* log in page*/
+  
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/*  style for all buttons */
+button {
+  background-color: lightgreen;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/*  hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+/*  padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+
